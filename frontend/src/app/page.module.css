@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+  position: relative;
+}
+
+.flexHalfContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexHalfContainer[data-name="upload-section"] {
+  width: 60%;
+}
+
+.flexHalfContainer[data-name="result-section"] {
+  flex-direction: column;
+  width: 40%;
+  justify-content: left;
+}
+
+.heading {
+    font-size: 20px;
+  font-weight: 600;
+
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25); */
+  margin: 1.5rem 0;
+  width: 360px;
+}

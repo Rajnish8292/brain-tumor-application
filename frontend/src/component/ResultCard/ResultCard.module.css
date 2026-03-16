@@ -1,0 +1,80 @@
+.card {
+  width: 360px;
+  background: #0b1f33;
+  border-radius: 14px;
+  padding: 16px;
+  color: #ffffff;
+  border: 1px solid #163a5f;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9fc5e8;
+  margin: 1.5rem 0;
+}
+
+.content {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.imageBox {
+  width: 96px;
+  height: 96px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1e4f7a;
+  background: #000;
+  flex-shrink: 0;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #a7c7e7;
+}
+
+.info span {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: rgba(33, 150, 243, 0.15);
+  border: 1px solid #2196f3;
+  color: #90caf9;
+}
+
+.status {
+  margin-top: 14px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: rgba(244, 67, 54, 0.15);
+  border: 1px solid #f44336;
+  color: #ff8a80;
+}

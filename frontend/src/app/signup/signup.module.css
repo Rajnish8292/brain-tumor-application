@@ -1,0 +1,73 @@
+.page {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.imageSection {
+  position: relative;
+  width: 65%;
+}
+
+.bgImage {
+  object-fit: cover;
+}
+
+.formSection {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+.card label {
+  font-size: 14px;
+  color: #444;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #16315d;
+}
+
+.login {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login a {
+  color: #2a5298;
+  font-weight: bold;
+}
