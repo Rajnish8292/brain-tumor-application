@@ -38,19 +38,24 @@ export async function POST(req) {
     }
 
     const token = signToken({ email });
-    const cookie = await cookies();
-    cookie.set("token", token, {
-      httpOnly: true,
-      secure: false,
-      maxAge: 60 * 60 * 24 * 30,
-      path: "/",
-      sameSite: "lax",
-    });
+    // const cookie = await cookies();
+    // cookie.set("token", token, {
+    //   httpOnly: true,
+    //   secure: false,
+    //   maxAge: 60 * 60 * 24 * 30,
+    //   path: "/",
+    //   sameSite: "lax",
+    // });
 
     return NextResponse.json(
       {
         message: "Login successful",
-        user: { id: user._id, email: user.email, fullname: user.fullname },
+        user: {
+          id: user._id,
+          email: user.email,
+          fullname: user.fullname,
+          token: token,
+        },
       },
       { status: 200 },
     );
